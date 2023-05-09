@@ -1,3 +1,4 @@
+import 'package:com.rrk.wallpaper_app_firebase/provider/apply_wallpaper_provider.dart';
 import 'package:com.rrk.wallpaper_app_firebase/provider/upload_wallpaper_provider.dart';
 import 'package:com.rrk.wallpaper_app_firebase/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_)=>UploadWallpaperProvider()),
+        ChangeNotifierProvider(create: (_)=>ApplyWallpaperProvider())
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

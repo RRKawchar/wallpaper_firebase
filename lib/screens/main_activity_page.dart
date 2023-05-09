@@ -21,7 +21,7 @@ class _MainActivityPageState extends State<MainActivityPage> {
     },
     {
       "icon":Icons.download,
-      "title":'Download'
+      "title":'Save'
     }
   ];
   List<Widget> bottomNavPages=[

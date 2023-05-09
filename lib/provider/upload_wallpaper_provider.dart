@@ -26,7 +26,7 @@ class UploadWallpaperProvider extends ChangeNotifier {
     _status = true;
     notifyListeners();
 
-    CollectionReference collectionRef = _firestore.collection('addWallpaper').doc(uid!).collection('users');
+    CollectionReference collectionRef = _firestore.collection('addWallpaper');
 
     String imagePath = '';
 
